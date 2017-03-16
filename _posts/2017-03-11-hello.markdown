@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Oh, hi!"
+date:   2017-03-11 21:22:06 +0100
+---
+
+I'll post here some notes about the things I learn.
