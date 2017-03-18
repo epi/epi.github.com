@@ -1,9 +1,8 @@
 title: less
 #email: no.spam@example.com
-description: > # this means to ignore newlines until "baseurl:"
-  Random rants on programming, mostly in dlang.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+description:
+baseurl:
+url: https://epi.github.io
 twitter_username: C012294
 github_username:  epi
 disqus:
