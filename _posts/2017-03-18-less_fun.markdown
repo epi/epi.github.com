@@ -464,9 +464,12 @@ static and dynamic dispatch. The D version seems to be slightly faster
 in both cases, but it's only a limited microbenchmark. The D dynamic lookup
 might just perform better here because we use a different algorithm
 that favors small sets. And the ~10% speedup for the static lookup
-might be an artifact of optimizer choices in this particular case,
-and won't be noticed in a larger application. Thus, let's just assume
-both versions perform equally well.
+most likely comes from `std::function` doing a bit more work
+on each call than `delegate` does (check the assembly:
+[D](https://godbolt.org/g/kXgIIX),
+[C++](https://godbolt.org/g/zFXTHG).) It won't be noticed in a
+larger application doing anything meaningful in the callback, so
+let's just assume both versions perform equally well.
 
 ![Event system performance: D vs. C++](/img/cppdmeta/d.svg)
 
