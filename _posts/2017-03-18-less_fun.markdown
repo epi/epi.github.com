@@ -6,8 +6,6 @@ comments: true
 #categories: c++ dlang metaprogramming
 ---
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-
 Despite the speaker's calm voice and the slides showing almost nothing but
 code in C++ (which isn't what you'd normally expect from a keynote),
 Louis Dionne's [talk on metaprogramming at Meeting C++ 2016](https://www.youtube.com/watch?v=X_p9X5RzBJE)
