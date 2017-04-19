@@ -364,7 +364,7 @@ array via this index.
 
 Note the `enum` in place where C++ version used `auto`. The type is
 also inferred automatically, but using `enum` forces `index` to be
-computed at runtime and only then it can be used in `static assert`.
+computed at compile time and only then it can be used in `static assert`.
 
 The lookup (compile-time linear search with `staticIndexOf`) is done only once
 per instantiation (i.e. once per key),
