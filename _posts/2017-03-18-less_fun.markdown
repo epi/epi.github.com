@@ -112,7 +112,7 @@ with compile-time string literals in place of the run-time ones.
 
 {% highlight c++ %}
 int main() {
-  auto events = make event_system("foo"_s, "bar"_s, "baz"_s});
+  auto events = make_event_system("foo"_s, "bar"_s, "baz"_s});
 
   events.on("foo"_s, []() { std::cout << "foo triggered!" << '\n'; });
   events.on("foo"_s, []() { std::cout << "foo again!" << '\n'; });
